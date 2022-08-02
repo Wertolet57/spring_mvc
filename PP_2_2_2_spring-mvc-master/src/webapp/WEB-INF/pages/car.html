@@ -5,6 +5,18 @@
     <title>Car</title>
 </head>
 <body>
-
+    <h1>Cars</h1>
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Power</th>
+            <th>Color</th>
+        </tr>
+        <tr th:each="car : ${cars}">
+            <td th:text="${car.model}"/>
+            <td th:text="${car.power}"/>
+            <td th:text="${car.color}"/>
+        </tr>
+    </table>
 </body>
 </html>
